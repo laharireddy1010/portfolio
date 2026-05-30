@@ -1,0 +1,134 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#0f172a;
+    color:#fff;
+    overflow-x:hidden;
+}
+
+/* Navbar */
+
+.navbar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(10px);
+    z-index:1000;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:700;
+    color:#38bdf8;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:white;
+    font-weight:500;
+    transition:.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active{
+    color:#38bdf8;
+}
+
+/* Hero */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:120px 8%;
+    gap:50px;
+}
+
+.hero-content{
+    max-width:600px;
+}
+
+.hero-content h3{
+    font-size:25px;
+    color:#94a3b8;
+}
+
+.hero-content h1{
+    font-size:60px;
+    margin:10px 0;
+}
+
+.hero-content h2{
+    font-size:32px;
+    color:#38bdf8;
+    min-height:50px;
+}
+
+.hero-content p{
+    margin:20px 0;
+    line-height:1.8;
+    color:#cbd5e1;
+}
+
+.typing{
+    border-right:3px solid #38bdf8;
+    padding-right:5px;
+    animation:blink .8s infinite;
+}
+
+@keyframes blink{
+    50%{
+        border-color:transparent;
+    }
+}
+
+/* Buttons */
+
+.btn{
+    display:inline-block;
+    padding:12px 25px;
+    margin-top:10px;
+    border:none;
+    border-radius:30px;
+    background:#38bdf8;
+    color:#fff;
+    text-decoration:none;
+    font-weight:600;
+    transition:.4s;
+    cursor:pointer;
+}
+
+.btn:hover{
+    transform:translateY(-5px);
+}
+
+.btn-outline{
+    background:transparent;
+    border:2px solid #38bdf8;
+}
+
+/* Profile Image */
+
+.hero-image img
